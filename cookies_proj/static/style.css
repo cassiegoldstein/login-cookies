@@ -1,0 +1,7 @@
+.gradientBg{
+    background-image: linear-gradient(#009FFD, #2A2A72);
+}
+
+.errorLabel{
+    color: red;
+}
