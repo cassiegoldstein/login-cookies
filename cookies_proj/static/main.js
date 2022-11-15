@@ -62,8 +62,16 @@ window.addEventListener('load', () => {
         //check if user is good to log in
         if(errorLabelP.innerText === '' && errorLabelE.innerText === ''){
             console.log("good to go");
-        }
-    });
+            axios.post('/log-in/', {
+                username: emailValue,
+                password: passwordValue,
+            }).then((response)=>{
+                console.log(response)
+                window.location.replace("/success/");
+            })
+    };
 
+
+    });
 
 });
